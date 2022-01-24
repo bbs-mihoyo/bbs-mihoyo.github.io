@@ -1288,7 +1288,7 @@ ul{list-style:none}li.catalog-item{cursor:pointer;overflow:hidden}li.catalog-ite
 <div style="order: 0;">
 <div class="obc-tmpl__part obc-tmpl-character obc-tmpl__part--newMain obc-tmpl__part--align-banner" data-part="newMain" data-tmpl="character">
 <div class="obc-tmp-character__mobile">
-<div class="obc-tmp-character__mobile--box" style='background-image: linear-gradient(0deg, rgb(224, 218, 211) 0%, rgb(224, 218, 211) 13%, rgba(224, 218, 211, 0) 35%, transparent 35%), url("https://uploadstatic.mihoyo.com/ys-obc/2022/01/14/29875367/2d56912d27168e8a6aa74e3fcd4f898f_4316626051449167378.png");'>
+<div class="obc-tmp-character__mobile--box" style='background-image: linear-gradient(0deg, rgb(224, 218, 211) 0%, rgb(224, 218, 211) 13%, rgba(224, 218, 211, 0) 35%, transparent 35%), url("/img/character/蒙古上单.png");'>
 <div class="obc-tmp-character__mobile--title">蒙古上单</div>
 <div class="obc-tmp-character__mobile--stars"><i class="obc-tmpl__rate-icon"></i><i class="obc-tmpl__rate-icon"></i><i class="obc-tmpl__rate-icon"></i><i class="obc-tmpl__rate-icon"></i><i class="obc-tmpl__rate-icon"></i></div>
 <div class="obc-tmp-character__property">
@@ -1337,8 +1337,8 @@ ul{list-style:none}li.catalog-item{cursor:pointer;overflow:hidden}li.catalog-ite
 </div>
 </div>
 </div>
-<div class="obc-tmp-character__pc">
-<div class="obc-tmp-character__box" style='background-image: url("https://uploadstatic.mihoyo.com/ys-obc/2022/01/14/29875367/08098732a45ff25f519e44cfdccfdcc2_3490576080827697916.png");'>
+<div class="obc-tmp-character__pc" style='background-image: linear-gradient(0deg, rgb(224, 218, 211) 0%, rgb(224, 218, 211) 13%, rgba(224, 218, 211, 0) 35%, transparent 35%), url("/img/character/蒙古上单pc.png");'>
+<div class="obc-tmp-character__box" style='background-image: linear-gradient(0deg, rgb(224, 218, 211) 0%, rgb(224, 218, 211) 13%, rgba(224, 218, 211, 0) 35%, transparent 35%), url("/img/character/蒙古上单pc.png");'>
 <div class="obc-tmp-character__box--left">
 <p class="obc-tmp-character__box--title">蒙古上单</p>
 <div class="obc-tmp-character__box--stars"><i class="obc-tmpl__rate-icon"></i><i class="obc-tmpl__rate-icon"></i><i class="obc-tmpl__rate-icon"></i><i class="obc-tmpl__rate-icon"></i><i class="obc-tmpl__rate-icon"></i></div>
@@ -3191,7 +3191,7 @@ ul{list-style:none}li.catalog-item{cursor:pointer;overflow:hidden}li.catalog-ite
        
        btn.classList.add("obc-tmpl__switch-btn--active")
      }
-
+     
      function switch_page() {
        let id = this.id
        let class_ = id.substring(0, id.length-4);
@@ -3216,14 +3216,6 @@ ul{list-style:none}li.catalog-item{cursor:pointer;overflow:hidden}li.catalog-ite
        document.getElementById('ling-basic-btn').addEventListener('click', switch_page)
        document.getElementById('ling-talent-btn').addEventListener('click', switch_page)
        document.getElementById('ling-show-btn').addEventListener('click', switch_page)
-
-       let lists = document.getElementsByClassName("obc-tmpl__switch-list")
-       for(var i = 0; i < lists.length; i++) {
-         let list = lists[i].children
-         let height = window.getComputedStyle(list[0]).getPropertyValue("height")
-         let style = `height: ${height}; transform: translateX(0%);`
-         lists[i].setAttribute("style", style)
-       }
      }
      window.addEventListener("load", init);
      </script>
